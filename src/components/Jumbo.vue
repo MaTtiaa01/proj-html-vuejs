@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <div class="jumbotron ">
+    <section class="jumbotron ">
         <div class="container">
             <div class="row ">
                 <div class="col-7"></div>
@@ -26,7 +26,7 @@ export default {
             </div>
 
         </div>
-    </div>
+    </section>
     <!-- ./jumbotron -->
 </template>
 

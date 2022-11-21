@@ -1,10 +1,11 @@
 <script >
 import Jumbo from "./Jumbo.vue";
+import Services from "./Services.vue"
 
 export default {
     name: "Main",
     components: {
-        Jumbo
+        Jumbo, Services
     }
 }
 </script>
@@ -13,6 +14,8 @@ export default {
     <main>
         <Jumbo></Jumbo>
         <!-- TODO BACKGROUND OPACITY -->
+        <Services></Services>
+
     </main>
 </template>
 
