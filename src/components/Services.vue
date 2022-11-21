@@ -14,14 +14,17 @@ export default {
         <div class="container">
             <div class="row gx-4">
                 <div class="col">
-                    <div class="box px-3">
+                    <div class="box px-3 d-flex flex-column justify-content-between">
                         <h5 class="text-uppercase">Our business areas</h5>
                         <h2>Logistics Services</h2>
                         <p>We are leaders in providing logistics services with a set of cutting edge technologies and
-                            team of ecperienced and renowned professionals.</p>
-                        <span>Tradition</span>
-                        <span>Quality</span>
-                        <span>Security</span>
+                            team of ecperienced and renowned professionals.
+                        </p>
+                        <div>
+                            <span>Tradition</span>
+                            <span>Quality</span>
+                            <span>Security</span>
+                        </div>
                         <Button>Read More</Button>
                     </div>
                 </div>
@@ -62,16 +65,21 @@ export default {
     background-color: $lg-primary;
     padding: 4rem 0;
 
+    .card {
+        height: 400px;
+    }
+
+
     .box {
+        height: 400px;
+
         h5 {
             color: $lg-secondary;
             font-size: 10px;
-            margin-bottom: 1rem;
         }
 
         h2 {
             font-weight: bold;
-            margin-bottom: 1rem;
         }
 
         p {
@@ -89,7 +97,6 @@ export default {
 
         Button {
             display: block;
-            margin-top: 1rem;
             font-size: 15px;
             background-color: $lg-secondary;
             color: $lg-lighter;

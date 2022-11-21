@@ -1,11 +1,12 @@
 <script >
 import Jumbo from "./Jumbo.vue";
-import Services from "./Services.vue"
+import Services from "./Services.vue";
+import Company from "./Company.vue";
 
 export default {
     name: "Main",
     components: {
-        Jumbo, Services
+        Jumbo, Services, Company
     }
 }
 </script>
@@ -15,7 +16,7 @@ export default {
         <Jumbo></Jumbo>
         <!-- TODO BACKGROUND OPACITY -->
         <Services></Services>
-
+        <Company></Company>
     </main>
 </template>
 
