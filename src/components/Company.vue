@@ -10,29 +10,35 @@ export default {
         <div class="row g-0">
             <div class="col-6 left">
                 <div class="box py-5 px-2">
+                    <div class="box_head">
+                        <h4 class="text-uppercase">about the work</h4>
+                        <h2>The company</h2>
+                        <p>With all of this expertise and capability comes an unrivalled commitment to costumer service.
+                        </p>
 
-                    <h4 class="text-uppercase">about the work</h4>
-                    <h2>The company</h2>
-                    <p>With all of this expertise and capability comes an unrivalled commitment to costumer service.</p>
-                    <div class="leadership">
-                        <div class="percentage"></div>
-                        <div class="details">
-                            <h3>Leadership</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
                     </div>
-                    <div class="psychology">
-                        <div class="percentage"></div>
-                        <div class="details">
-                            <h3>Psychology</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="box_body">
+
+                        <div class="leadership">
+                            <div class="percentage"></div>
+                            <div class="details">
+                                <h3>Leadership</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flexibility">
-                        <div class="percentage"></div>
-                        <div class="details">
-                            <h3>Flexibility</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="psychology">
+                            <div class="percentage"></div>
+                            <div class="details">
+                                <h3>Psychology</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="flexibility">
+                            <div class="percentage"></div>
+                            <div class="details">
+                                <h3>Flexibility</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,7 +61,15 @@ export default {
         max-width: 100%;
 
         .col-6.left {
+            display: flex;
+            justify-content: end;
+
             .box {
+                padding: 3rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 400px;
 
                 h4 {
                     font-size: 10px;
@@ -64,6 +78,7 @@ export default {
 
                 h2 {
                     color: $lg-lighter;
+                    font-size: 40px;
                 }
 
                 p {
