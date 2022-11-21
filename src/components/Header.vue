@@ -1,8 +1,12 @@
 <script >
 import { store } from "../store.js";
+import Button from "./Button.vue";
 
 export default {
     name: "Header",
+    components: {
+        Button,
+    },
     data() {
         return {
             store,
@@ -53,7 +57,23 @@ export default {
 
             </div>
         </div>
-        <div class="head_bottom"></div>
+        <div class="head_bottom">
+            <nav class="container d-flex justify-content-between">
+                <div class="logo">
+                    <img src="../assets/img/nexgen_trans.png" alt="">
+                </div>
+                <div class="navbar">
+                    <ul class="d-flex align-items-center ">
+                        <li v-for=" page in store.pages">
+                            <a class="text-uppercase" href="#">{{ page }}</a>
+                        </li>
+                        <li>
+                            <Button>Get in touch</Button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 </template>
 
@@ -80,6 +100,36 @@ header {
             }
         }
 
+    }
+
+    .head_bottom {
+        padding: 1rem 0;
+
+        .logo {
+            img {
+                width: 100px;
+            }
+        }
+
+        .navbar {
+            ul {
+                list-style: none;
+
+                li {
+                    margin-left: 1rem;
+
+                    a {
+                        color: black;
+                    }
+                }
+
+                Button {
+                    background-color: $lg-secondary-light;
+                    border: 1px solid $lg-secondary-light;
+                    color: $lg-lighter;
+                }
+            }
+        }
     }
 }
 </style>
