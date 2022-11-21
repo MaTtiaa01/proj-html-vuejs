@@ -81,6 +81,8 @@ export default {
 @use "../assets/scss/variables.scss" as *;
 
 header {
+    position: relative;
+
     .head_top {
         background-color: $lg-dark-blue;
         padding: 1rem 0;
@@ -104,6 +106,12 @@ header {
 
     .head_bottom {
         padding: 1rem 0;
+        position: absolute;
+        left: 0;
+        top: 72px;
+        background-color: transparent;
+        width: 100%;
+
 
         .logo {
             img {
@@ -119,7 +127,7 @@ header {
                     margin-left: 1rem;
 
                     a {
-                        color: black;
+                        color: $lg-lighter;
                     }
                 }
 
