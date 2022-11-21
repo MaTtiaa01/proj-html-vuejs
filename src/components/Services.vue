@@ -10,11 +10,11 @@ export default {
 </script>
 
 <template>
-    <section class="services">
-        <div class="container">
+    <section class="services ">
+        <div class="container ">
             <div class="row gx-4">
                 <div class="col">
-                    <div class="box px-3 d-flex flex-column justify-content-between">
+                    <div class="box  ">
                         <h5 class="text-uppercase">Our business areas</h5>
                         <h2>Logistics Services</h2>
                         <p>We are leaders in providing logistics services with a set of cutting edge technologies and
@@ -63,15 +63,17 @@ export default {
 
 .services {
     background-color: $lg-primary;
-    padding: 4rem 0;
+    padding: 4rem;
 
-    .card {
-        height: 400px;
+    .container {
+        padding: 6rem;
     }
 
-
     .box {
-        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
 
         h5 {
             color: $lg-secondary;
@@ -79,6 +81,7 @@ export default {
         }
 
         h2 {
+            font-size: 40px;
             font-weight: bold;
         }
 
@@ -96,15 +99,18 @@ export default {
         }
 
         Button {
-            display: block;
             font-size: 15px;
             background-color: $lg-secondary;
             color: $lg-lighter;
+            display: inline-block;
+            width: 45%;
+            border: 1px solid $lg-secondary;
         }
     }
 
     .card {
         padding: 2rem;
+        border: 1px solid $lg-lighter;
 
         h4 {
             font-size: 20px;
