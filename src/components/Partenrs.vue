@@ -9,7 +9,7 @@ export default {
         <div class="container">
             <ul class="d-flex align-items-center justify-content-between">
                 <li>
-                    <img src="../assets/img/logo-5.png" alt="">
+                    <img src="../assets/img/logo-5.png" alt="" style="width:50px ;">
                 </li>
                 <li>
                     <img src="../assets/img/logo-1.png" alt="">
@@ -24,7 +24,7 @@ export default {
                     <img src="../assets/img/logo-4.png" alt="">
                 </li>
                 <li>
-                    <img src="../assets/img/logo-5.png" alt="">
+                    <img src="../assets/img/logo-5.png" alt="" style="width:50px ;">
                 </li>
             </ul>
         </div>
@@ -43,6 +43,14 @@ export default {
     ul {
         list-style: none;
 
+        li {
+
+
+            img {
+                width: 70px;
+                filter: opacity(0.6)
+            }
+        }
     }
 }
 </style>

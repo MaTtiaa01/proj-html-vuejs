@@ -63,10 +63,10 @@ export default {
 
 .services {
     background-color: $lg-primary;
-    padding: 4rem;
+    padding: 6rem;
 
     .container {
-        padding: 6rem;
+        padding: 4rem 0;
     }
 
     .box {
