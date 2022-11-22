@@ -45,7 +45,19 @@ export default {
                     </div>
 
                 </div>
-                <div class="col-5"></div>
+                <div class="col-5">
+                    <div class="box d-flex flex-column justify-content-between">
+                        <h3>Example Inc.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="phone">
+
+                        </div>
+                        <div class="email"></div>
+                        <div class="location"></div>
+                        <Button>View map</Button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
