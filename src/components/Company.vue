@@ -6,6 +6,12 @@ export default {
 
 <template>
     <section class="company">
+        <div class="pattern_top">
+            <img src="../assets/img/dot.jpg" alt="">
+        </div>
+        <div class="patter_bottom">
+
+        </div>
 
         <div class="row g-0">
             <div class="col-6 left">
@@ -76,6 +82,22 @@ export default {
 
 .company {
     background-color: $lg-darker;
+    position: relative;
+
+    .pattern_top {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        img {
+            background-color: transparent;
+            width: 60px;
+            opacity: 0.5;
+            color: $lg-secondary;
+        }
+    }
+
 
     .row {
         max-width: 100%;
