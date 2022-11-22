@@ -82,7 +82,12 @@ export default {
 
             </div>
 
-            <div class="footer_bottom"></div>
+            <div class="footer_bottom">
+                <div class="box d-flex align-items-center justify-content-between">
+                    <div>Enjoy the low price. We are tracking any intention of piracy.</div>
+                    <div>&copy 2020 NEXGEN is Proudly Powered by <span>Mattia</span>. </div>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -150,6 +155,16 @@ footer {
                 border: 1px solid $lg-secondary-light;
                 margin-top: 0.5rem;
                 width: 70%;
+            }
+        }
+
+        .footer_bottom {
+            color: $lg-light-dark;
+            font-size: 15px;
+            padding: 0.5rem 0;
+
+            span {
+                color: $lg-secondary;
             }
         }
 
