@@ -54,6 +54,7 @@ export default {
         </div>
 
     </section>
+    <!-- ./company -->
 </template>
 
 <style lang="scss" scoped>
