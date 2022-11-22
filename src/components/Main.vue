@@ -5,11 +5,12 @@ import Company from "./Company.vue";
 import Partenrs from "./Partenrs.vue";
 import News from "./News.vue";
 import NewsLetter from "./NewsLetter.vue";
+import CallToAction from "./CallToAction.vue";
 
 export default {
     name: "Main",
     components: {
-        Jumbo, Services, Company, Partenrs, News, NewsLetter
+        Jumbo, Services, Company, Partenrs, News, NewsLetter, CallToAction
     }
 }
 </script>
@@ -23,6 +24,7 @@ export default {
         <Partenrs></Partenrs>
         <News></News>
         <NewsLetter></NewsLetter>
+        <CallToAction></CallToAction>
     </main>
 </template>
 
