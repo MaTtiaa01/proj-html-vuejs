@@ -14,5 +14,6 @@ export default {
 <style lang="scss" scoped>
 button {
     padding: 0.25rem 1rem;
+    border-radius: 2px;
 }
 </style>
