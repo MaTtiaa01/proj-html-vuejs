@@ -20,7 +20,12 @@ export default {
                     <div class="box_body">
 
                         <div class="leadership">
-                            <div class="percentage"></div>
+                            <div class="percentage d-flex align-items-center justify-content-center">
+
+                                <div class="internal text-center ">
+                                    0%
+                                </div>
+                            </div>
                             <div class="details">
                                 <h3>Leadership</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -89,6 +94,25 @@ export default {
                 h3 {
                     color: $lg-lighter;
                     font-size: 20px;
+                }
+
+                .leadership {
+                    .percentage {
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        padding: 1rem;
+                        width: 100px;
+                        aspect-ratio: 1 / 1;
+
+                        .internal {
+                            border: 1px solid white;
+                            border-radius: 50%;
+                            width: 100%;
+                            aspect-ratio: 1 / 1;
+                            color: $lg-lighter;
+                            line-height: 55px;
+                        }
+                    }
                 }
 
             }
