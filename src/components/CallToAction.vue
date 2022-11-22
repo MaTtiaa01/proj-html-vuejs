@@ -12,7 +12,7 @@ export default {
 <template>
     <section class="call_to_action">
         <div class="contenitore">
-            <div class="row ">
+            <div class="row gx-5">
                 <div class="col-7">
                     <div class="details mb-5">
                         <h4 class="text-uppercase">send a message</h4>
@@ -45,16 +45,29 @@ export default {
                     </div>
 
                 </div>
-                <div class="col-5">
+                <div class="col-5 info">
                     <div class="box d-flex flex-column justify-content-between">
                         <h3>Example Inc.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="phone">
-
+                        <div class="phone my-2 d-flex align-items-center">
+                            <div class="icon text-center">
+                                <font-awesome-icon icon="fa-solid fa-phone" />
+                            </div>
+                            <div class="text">+1(305) 1234-5678</div>
                         </div>
-                        <div class="email"></div>
-                        <div class="location"></div>
+                        <div class="email my-2 d-flex align-items-center">
+                            <div class="icon text-center">
+                                <font-awesome-icon icon="fa-solid fa-envelope" />
+                            </div>
+                            <div class="text">helloexample.com</div>
+                        </div>
+                        <div class="location my-2 d-flex align-items-center">
+                            <div class="icon text-center">
+                                <font-awesome-icon icon="fa-solid fa-phone" />
+                            </div>
+                            <div class="text">Main Avenue,978</div>
+                        </div>
                         <Button>View map</Button>
                     </div>
                 </div>
@@ -94,7 +107,7 @@ export default {
             }
 
             p {
-                font-size: 10px;
+                font-size: 15px;
                 color: $lg-light-dark;
             }
 
@@ -126,6 +139,38 @@ export default {
                 margin-top: 1rem;
                 border: 1px solid $lg-secondary;
                 font-size: 15px;
+            }
+        }
+
+        .info {
+
+            p {
+                font-size: 15px;
+                color: $lg-light-dark;
+            }
+
+            .icon {
+                width: 40px;
+                aspect-ratio: 1 / 1;
+                background-color: $lg-secondary-lighter;
+                color: $lg-secondary;
+                border: 1px solid $lg-secondary-lighter;
+                border-radius: 50%;
+                margin-right: 0.75rem;
+                padding: 0.5rem;
+            }
+
+            .text {
+                color: $lg-secondary-light;
+            }
+
+            Button {
+                font-size: 15px;
+                background-color: $lg-primary;
+                border: 1px solid $lg-secondary-light;
+                color: $lg-secondary-light;
+                width: 35%;
+                margin-top: 0.5rem;
             }
         }
     }
