@@ -9,7 +9,7 @@ export default {
 
         <div class="row g-0">
             <div class="col-6 left">
-                <div class="box py-5 px-2">
+                <div class="box py-5 ">
                     <div class="box_head">
                         <h4 class="text-uppercase">about the work</h4>
                         <h2> <span>The</span> company</h2>
@@ -17,44 +17,53 @@ export default {
                         </p>
 
                     </div>
-                    <div class="box_body">
+                    <div class="box_body my-3">
 
-                        <div class="leadership">
-                            <div class="circle-border">
-                                <div class="circle">
-                                    <span class="number">1</span> <span class="percentuale">%</span>
+                        <div class="leadership d-flex align-items-center justify-content-between my-5">
+                            <div class="percentage">
+                                <div class="circle-border">
+                                    <div class="circle">
+                                        <span class="number">0</span> <span class="percentuale">%</span>
+                                    </div>
                                 </div>
+
                             </div>
-                            <!-- <div class="percentage d-flex align-items-center justify-content-center">
 
-                                <div class="internal text-center ">
-                                    0%
-                                </div>
-                            </div> -->
                             <div class="details">
                                 <h3>Leadership</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
-                        <div class="psychology">
-                            <div class="percentage"></div>
+                        <div class="psychology d-flex align-items-center justify-content-between my-5">
+                            <div class="percentage">
+                                <div class="circle-border">
+                                    <div class="circle">
+                                        <span class="number">0</span> <span class="percentuale">%</span>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="details">
                                 <h3>Psychology</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit abar truem.</p>
                             </div>
                         </div>
-                        <div class="flexibility">
-                            <div class="percentage"></div>
+                        <div class="flexibility d-flex aling-items-center justify-content-between my-5">
+                            <div class="percentage">
+                                <div class="circle-border">
+                                    <div class="circle">
+                                        <span class="number">1</span> <span class="percentuale">%</span>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="details">
                                 <h3>Flexibility</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit abr truem nalr.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-6 right">
-                <img src="../assets/img/about-5.jpg" alt="">
             </div>
         </div>
 
@@ -80,7 +89,8 @@ export default {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                width: 400px;
+                padding-right: 3rem;
+                width: 550px;
 
                 h4 {
                     font-size: 10px;
@@ -116,17 +126,17 @@ export default {
                     top: 5px;
                     left: 5px;
                     text-align: center;
-                    width: 100px;
-                    height: 100px;
+                    width: 80px;
+                    height: 80px;
                     border-radius: 100%;
-                    background-color: $lg-dark;
+                    background-color: $lg-darker;
                     color: $lg-light-dark;
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
                     span.number {
-                        font-size: 30px;
+                        font-size: 40px;
                         font-weight: bold;
                     }
 
@@ -138,37 +148,67 @@ export default {
                 .circle-border {
                     position: relative;
                     text-align: center;
-                    width: 110px;
-                    height: 110px;
-                    margin-left: 30%;
+                    width: 90px;
+                    height: 90px;
                     border-radius: 100%;
                     background-color: #E53B3B;
                     background: linear-gradient(185deg, $lg-dark-grey 50%, transparent 50%), linear-gradient(0deg, $lg-dark-grey 50%, $lg-secondary 50%)
                 }
 
-                // .leadership {
-                //     .percentage {
-                //         border: 1px solid white;
-                //         border-radius: 50%;
-                //         padding: 1rem;
-                //         width: 100px;
-                //         aspect-ratio: 1 / 1;
+                .details {
+                    margin-left: 2rem;
 
-                //         .internal {
-                //             border: 1px solid white;
-                //             border-radius: 50%;
-                //             width: 100%;
-                //             aspect-ratio: 1 / 1;
-                //             color: $lg-lighter;
-                //             line-height: 55px;
-                //         }
-                //     }
-                // }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+
+                .leadership,
+                .psychology {
+                    .circle {
+                        position: relative;
+                        top: 5px;
+                        left: 5px;
+                        text-align: center;
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 100%;
+                        background-color: $lg-darker;
+                        color: $lg-light-dark;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        span.number {
+                            font-size: 40px;
+                            font-weight: bold;
+                        }
+
+                        span.percentuale {
+                            padding-top: 0.75rem;
+                        }
+                    }
+
+                    .circle-border {
+                        position: relative;
+                        text-align: center;
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 100%;
+                        background-color: #E53B3B;
+                        background: linear-gradient(180deg, $lg-dark-grey 50%, transparent 50%), linear-gradient(0deg, $lg-dark-grey 50%, $lg-secondary 50%)
+                    }
+                }
+
 
             }
         }
 
-        img {
+        .col-6.right {
+            background-image: url(../assets/img/about-5.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom;
             background-size: cover;
         }
     }
