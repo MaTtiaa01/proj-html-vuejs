@@ -34,7 +34,8 @@ export default {
 @use "../assets/scss/variables.scss" as *;
 
 .jumbotron {
-    background-image: url(../assets/img/jumbo.jpg);
+    // inscurire il background
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/jumbo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

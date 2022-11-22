@@ -105,15 +105,15 @@ export default {
                 }
 
                 .card.increase {
-                    background-image: url(../assets/img/news-1.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/news-1.jpg);
                 }
 
                 .card.market {
-                    background-image: url(../assets/img/news-2.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/news-2.jpg);
                 }
 
                 .card.working {
-                    background-image: url(../assets/img/news-3.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/news-3.jpg);
                 }
             }
         }
