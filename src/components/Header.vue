@@ -18,7 +18,7 @@ export default {
 <template>
     <header>
         <div class="head_top">
-            <div class="container d-flex justify-content-between">
+            <div class="contenitore d-flex justify-content-between">
                 <div class="open_hours d-flex align-items-center">
                     <font-awesome-icon icon="fa-solid fa-clock" /> <span class="ms-2">Open huors: {{ store.info.openHour
                     }}</span>
@@ -58,7 +58,7 @@ export default {
             </div>
         </div>
         <div class="head_bottom">
-            <nav class="container d-flex justify-content-between">
+            <nav class="contenitore d-flex justify-content-between">
                 <div class="logo">
                     <img src="../assets/img/nexgen_trans.png" alt="">
                 </div>
@@ -82,6 +82,11 @@ export default {
 
 header {
     position: relative;
+
+    .contenitore {
+        max-width: 900px;
+        margin: auto;
+    }
 
     .head_top {
         background-color: $lg-dark-blue;

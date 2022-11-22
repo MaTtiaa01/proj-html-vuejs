@@ -11,7 +11,7 @@ export default {
 
 <template>
     <section class="services ">
-        <div class="container ">
+        <div class="contenitore ">
             <div class="row gx-4">
                 <div class="col">
                     <div class="box  ">
@@ -63,10 +63,12 @@ export default {
 
 .services {
     background-color: $lg-primary;
-    padding: 6rem;
+    padding: 6rem 0;
 
-    .container {
+    .contenitore {
         padding: 4rem 0;
+        max-width: 900px;
+        margin: auto;
     }
 
     .box {

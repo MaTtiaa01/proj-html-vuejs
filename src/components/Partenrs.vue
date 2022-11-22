@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section class="partners">
-        <div class="container">
+        <div class="contenitore">
             <ul class="d-flex align-items-center justify-content-between">
                 <li>
                     <img src="../assets/img/logo-5.png" alt="" style="width:50px ;">
@@ -38,10 +38,16 @@ export default {
 
 .partners {
     background-color: $lg-primary;
-    padding: 4rem;
+    padding: 4rem 0;
+
+    .contenitore {
+        max-width: 900px;
+        margin: auto;
+    }
 
     ul {
         list-style: none;
+        padding-left: 0;
 
         li {
 

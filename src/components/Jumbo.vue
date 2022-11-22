@@ -11,7 +11,7 @@ export default {
 
 <template>
     <section class="jumbotron ">
-        <div class="container">
+        <div class="contenitore">
             <div class="row ">
                 <div class="col-7"></div>
                 <div class="col-5 full">
@@ -39,6 +39,11 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 6rem 0;
+
+    .contenitore {
+        max-width: 900px;
+        margin: auto;
+    }
 
     .col-5.full {
         .box {

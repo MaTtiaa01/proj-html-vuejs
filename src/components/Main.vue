@@ -3,11 +3,12 @@ import Jumbo from "./Jumbo.vue";
 import Services from "./Services.vue";
 import Company from "./Company.vue";
 import Partenrs from "./Partenrs.vue";
+import News from "./News.vue";
 
 export default {
     name: "Main",
     components: {
-        Jumbo, Services, Company, Partenrs
+        Jumbo, Services, Company, Partenrs, News
     }
 }
 </script>
@@ -19,6 +20,7 @@ export default {
         <Services></Services>
         <Company></Company>
         <Partenrs></Partenrs>
+        <News></News>
     </main>
 </template>
 
