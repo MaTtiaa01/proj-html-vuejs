@@ -53,7 +53,9 @@ export default {
                             <h3>About</h3>
                             <ul>
                                 <li v-for="el in store.about">
-                                    <font-awesome-icon class="me-2" icon="fa-solid fa-chevron-right" />{{ el.text }}
+                                    <a :href="el.link">
+                                        <font-awesome-icon class="me-2" icon="fa-solid fa-chevron-right" />{{ el.text }}
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -63,7 +65,9 @@ export default {
                             <h3>Transport</h3>
                             <ul>
                                 <li v-for="el in store.transport">
-                                    <font-awesome-icon class="me-2" icon="fa-solid fa-chevron-right" />{{ el.text }}
+                                    <a :href="el.link">
+                                        <font-awesome-icon class="me-2" icon="fa-solid fa-chevron-right" />{{ el.text }}
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -73,7 +77,9 @@ export default {
                             <h3>Support</h3>
                             <ul>
                                 <li v-for="el in store.support">
-                                    <font-awesome-icon class="me-2" icon="fa-solid fa-chevron-right" />{{ el.text }}
+                                    <a :href="el.link">
+                                        <font-awesome-icon class="me-2" icon="fa-solid fa-chevron-right" />{{ el.text }}
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -145,9 +151,13 @@ footer {
                     padding-left: 0;
 
                     li {
-                        color: $lg-light-dark;
-                        font-size: 15px;
-                        margin-bottom: 0.5rem;
+                        margin-bottom: 0.25rem;
+
+                        a {
+                            color: $lg-light-dark;
+                            font-size: 15px;
+
+                        }
                     }
                 }
 

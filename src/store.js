@@ -2,11 +2,26 @@ import { reactive } from "vue";
 
 export const store = reactive({
     pages: [
-        "home",
-        "services",
-        "skills",
-        "partenrs",
-        "blog"
+        {
+            text: "home",
+            link: "#"
+        },
+        {
+            text: "services",
+            link: "#"
+        },
+        {
+            text: "skills",
+            link: "#"
+        },
+        {
+            text: "partners",
+            link: "#"
+        },
+        {
+            text: "blog",
+            link: "#"
+        }
     ],
     info: {
         mail: "example@name.com",

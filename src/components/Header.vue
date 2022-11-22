@@ -65,7 +65,7 @@ export default {
                 <div class="navbar">
                     <ul class="d-flex align-items-center ">
                         <li v-for=" page in store.pages">
-                            <a class="text-uppercase" href="#">{{ page }}</a>
+                            <a class="text-uppercase" :href="page.link">{{ page.text }}</a>
                         </li>
                         <li>
                             <Button>Get in touch</Button>
