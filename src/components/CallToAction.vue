@@ -16,7 +16,7 @@ export default {
                 <div class="col-7">
                     <div class="details mb-5">
                         <h4 class="text-uppercase">send a message</h4>
-                        <h2>Get in <span>Touch</span></h2>
+                        <h2 class="my-3">Get in <span>Touch</span></h2>
                         <p>We will respond to your message as soon as possible.</p>
                     </div>
                     <div class="form">
@@ -64,7 +64,7 @@ export default {
                         </div>
                         <div class="location my-2 d-flex align-items-center">
                             <div class="icon text-center">
-                                <font-awesome-icon icon="fa-solid fa-phone" />
+                                <font-awesome-icon icon="fa-solid fa-location-dot" />
                             </div>
                             <div class="text">Main Avenue,978</div>
                         </div>

@@ -10,13 +10,14 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
 
 
 
 
 
 /* add icons to the library */
-library.add(faFacebook, faTwitter, faLinkedin, faPhone, faEnvelope, faClock, faChevronRight)
+library.add(faFacebook, faTwitter, faLinkedin, faPhone, faEnvelope, faClock, faChevronRight, faLocationDot)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

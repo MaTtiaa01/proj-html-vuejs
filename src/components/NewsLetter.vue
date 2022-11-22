@@ -67,7 +67,7 @@ export default {
             }
 
             p {
-                font-size: 10px;
+                font-size: 15px;
                 color: $lg-light-dark;
             }
 

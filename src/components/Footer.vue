@@ -108,7 +108,7 @@ footer {
         max-width: 900px;
 
         .footer_top {
-            padding: 5rem 0;
+            padding: 7rem 0;
             color: $lg-light-dark;
 
             .col.left {
@@ -116,9 +116,14 @@ footer {
                 flex-direction: column;
                 justify-content: space-between;
 
-                .icon {
-                    margin-right: 0.5rem;
+                .contacts {
+                    font-size: 14px;
+
+                    .icon {
+                        margin-right: 0.5rem;
+                    }
                 }
+
             }
 
             .logo {
@@ -160,7 +165,7 @@ footer {
 
         .footer_bottom {
             color: $lg-light-dark;
-            font-size: 15px;
+            font-size: 12px;
             padding: 0.5rem 0;
 
             span {
