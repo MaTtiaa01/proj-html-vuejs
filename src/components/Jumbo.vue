@@ -17,7 +17,7 @@ export default {
                 <div class="col-5 full">
                     <div class="box">
 
-                        <h1>Logistics that goes further.</h1>
+                        <h1><span>Logistics</span> that goes further.</h1>
                         <p>For 20 years working with the most innovative in the field of transport</p>
                         <Button class="dark text-uppercase">Get in touch</Button>
                         <Button class="light text-uppercase">read more</Button>
@@ -48,23 +48,44 @@ export default {
 
     .col-5.full {
         .box {
-            width: 250px;
+            width: 300px;
             padding: 5rem 0;
 
             h1 {
                 font-weight: bold;
                 color: $lg-lighter;
-                font-size: 50px;
+                font-size: 60px;
+                z-index: 900;
+
+                span {
+                    position: relative;
+
+                    &::before {
+                        background-color: $lg-secondary-light;
+
+                        content: "";
+                        position: absolute;
+                        width: calc(100% + 4px);
+                        height: 40%;
+                        left: -2px;
+                        bottom: 0;
+                        opacity: 0.5;
+                        z-index: 1;
+                    }
+                }
+
             }
 
             p {
-                color: $lg-light-dark;
+                color: $lg-grey;
+                font-size: 20px;
             }
 
             Button {
                 color: $lg-lighter;
                 font-size: 10px;
                 display: inline-block;
+                font-size: 15px;
             }
 
             Button.dark {

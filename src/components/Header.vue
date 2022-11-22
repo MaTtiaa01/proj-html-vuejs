@@ -23,8 +23,8 @@ export default {
                     <font-awesome-icon icon="fa-solid fa-clock" /> <span class="ms-2">Open huors: {{ store.info.openHour
                     }}</span>
                 </div>
-                <div class="info d-flex align-items-center">
-                    <ul class="d-flex">
+                <div class="info d-flex">
+                    <ul class="d-flex  align-items-center">
                         <li>
                             <a href="#">
                                 <font-awesome-icon icon="fa-solid fa-phone" /> <span class="me-2">{{ store.info.phone
@@ -91,18 +91,20 @@ header {
     .head_top {
         background-color: $lg-dark-blue;
         padding: 1rem 0;
-
-        .open_hours {
-            color: $lg-lighter;
-        }
+        font-size: 15px;
+        color: $lg-light-dark;
 
         .info {
-
             ul {
                 list-style: none;
+                margin: 0;
 
                 li {
                     margin-left: 1rem;
+
+                    a {
+                        color: $lg-light-dark;
+                    }
                 }
             }
         }
@@ -110,7 +112,7 @@ header {
     }
 
     .head_bottom {
-        padding: 1rem 0;
+        padding: 0.5rem 0;
         position: absolute;
         left: 0;
         top: 72px;
@@ -120,7 +122,7 @@ header {
 
         .logo {
             img {
-                width: 100px;
+                width: 150px;
             }
         }
 
@@ -131,8 +133,10 @@ header {
                 li {
                     margin-left: 1rem;
 
+
                     a {
                         color: $lg-lighter;
+                        font-size: 15px;
                     }
                 }
 
@@ -140,6 +144,7 @@ header {
                     background-color: $lg-secondary-light;
                     border: 1px solid $lg-secondary-light;
                     color: $lg-lighter;
+                    font-size: 15px;
                 }
             }
         }
