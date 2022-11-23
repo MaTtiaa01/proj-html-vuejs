@@ -15,5 +15,10 @@ export default {
 button {
     padding: 0.25rem 1rem;
     border-radius: 2px;
+    transition: all 200ms ease-out;
+
+    &:hover {
+        border-radius: 8px;
+    }
 }
 </style>

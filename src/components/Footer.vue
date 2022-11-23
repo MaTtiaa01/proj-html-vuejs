@@ -64,6 +64,7 @@ export default {
                                     <a :href="el.link">
                                         <font-awesome-icon class="me-2" icon="fa-solid fa-chevron-right" />{{ el.text }}
                                     </a>
+                                    <hr>
                                 </li>
                             </ul>
                         </div>
@@ -76,6 +77,7 @@ export default {
                                     <a :href="el.link">
                                         <font-awesome-icon class="me-2" icon="fa-solid fa-chevron-right" />{{ el.text }}
                                     </a>
+                                    <hr>
                                 </li>
                             </ul>
                         </div>
@@ -88,6 +90,7 @@ export default {
                                     <a :href="el.link">
                                         <font-awesome-icon class="me-2" icon="fa-solid fa-chevron-right" />{{ el.text }}
                                     </a>
+                                    <hr>
                                 </li>
                             </ul>
                         </div>
@@ -159,12 +162,33 @@ footer {
                     padding-left: 0;
 
                     li {
-                        margin-bottom: 0.25rem;
+
 
                         a {
+                            margin: 0.5rem 0;
                             color: $lg-light-dark;
                             font-size: 15px;
+                            text-decoration: none;
+                            transition: all 200ms ease-out;
 
+
+                            &:hover {
+                                font-size: 18px;
+                            }
+
+                            &:hover~hr {
+                                width: 100%;
+                            }
+
+                        }
+
+                        hr {
+                            width: 0px;
+                            height: 3px;
+                            background-color: $lg-secondary ;
+                            border: none;
+                            margin: 0px;
+                            transition: width 450ms ease-out;
                         }
                     }
                 }

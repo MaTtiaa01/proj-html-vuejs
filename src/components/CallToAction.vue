@@ -52,7 +52,7 @@ export default {
                             </div>
                             <div class="text">{{ store.info.location }}</div>
                         </div>
-                        <Button>View map</Button>
+                        <Button><a href="https://goo.gl/maps/8pJhAoSucAbFv87s7">View map</a> </Button>
                     </div>
                 </div>
             </div>
@@ -122,9 +122,12 @@ export default {
                 font-size: 15px;
                 background-color: $lg-primary;
                 border: 1px solid $lg-secondary-light;
-                color: $lg-secondary-light;
                 width: 35%;
                 margin-top: 0.5rem;
+
+                a {
+                    color: $lg-secondary-light;
+                }
             }
         }
     }
