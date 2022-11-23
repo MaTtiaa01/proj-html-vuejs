@@ -9,8 +9,8 @@ export default {
         <div class="pattern_top">
             <img src="../assets/img/dot.jpg" alt="">
         </div>
-        <div class="patter_bottom">
-
+        <div class="pattern_bottom">
+            <img src="../assets/img/dot.jpg" alt="">
         </div>
 
         <div class="row g-0">
@@ -84,18 +84,31 @@ export default {
     background-color: $lg-darker;
     position: relative;
 
+    .pattern_top,
+    .pattern_bottom {
+        img {
+            background-color: transparent;
+            width: 60px;
+            opacity: 0.3;
+            color: $lg-secondary;
+            width: 100px;
+            height: 50px;
+            object-fit: cover;
+        }
+    }
+
     .pattern_top {
         position: absolute;
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
 
-        img {
-            background-color: transparent;
-            width: 60px;
-            opacity: 0.5;
-            color: $lg-secondary;
-        }
+    .pattern_bottom {
+        position: absolute;
+        bottom: -3rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 
