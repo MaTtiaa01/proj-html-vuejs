@@ -8,7 +8,7 @@ export default defineConfig({
     vue(),
     VitePluginFonts({
       google: {
-        families: ['Monserrat']
+        families: ['Rubik']
       }
     })
   ]

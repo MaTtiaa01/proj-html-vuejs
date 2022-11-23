@@ -12,9 +12,9 @@ export default {
             store
         }
     },
-    computed: {
+    methods: {
         getCurrentYear() {
-            return this.store.currentYear = (new Date()).getFullYear();
+            this.store.currentYear = (new Date()).getFullYear();
         }
     },
     mounted() {
