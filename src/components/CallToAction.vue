@@ -82,19 +82,19 @@ export default {
                             <div class="icon text-center">
                                 <font-awesome-icon icon="fa-solid fa-phone" />
                             </div>
-                            <div class="text">+1(305) 1234-5678</div>
+                            <div class="text">{{ store.info.phone }}</div>
                         </div>
                         <div class="email my-2 d-flex align-items-center">
                             <div class="icon text-center">
                                 <font-awesome-icon icon="fa-solid fa-envelope" />
                             </div>
-                            <div class="text">helloexample.com</div>
+                            <div class="text">{{ store.info.mail }}</div>
                         </div>
                         <div class="location my-2 d-flex align-items-center">
                             <div class="icon text-center">
                                 <font-awesome-icon icon="fa-solid fa-location-dot" />
                             </div>
-                            <div class="text">Main Avenue,978</div>
+                            <div class="text">{{ store.info.location }}</div>
                         </div>
                         <Button>View map</Button>
                     </div>

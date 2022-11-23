@@ -59,18 +59,22 @@ export default {
 
                 span {
                     position: relative;
+                    background-color: transparent;
+                    z-index: 1;
 
                     &::before {
                         background-color: $lg-secondary-light;
 
                         content: "";
                         position: absolute;
-                        width: calc(100% + 4px);
-                        height: 40%;
-                        left: -2px;
-                        bottom: 0;
+                        width: 100%;
+                        height: 35%;
+                        left: 5px;
+                        bottom: 0.5rem;
                         opacity: 0.5;
-                        z-index: 1;
+                        z-index: -1;
+                        border: 1px solid $lg-secondary-light;
+                        border-radius: 2px;
                     }
                 }
 
