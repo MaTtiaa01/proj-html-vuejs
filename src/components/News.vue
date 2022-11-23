@@ -1,10 +1,25 @@
 <script>
 import Button from "./Button.vue";
+import { store } from "../store.js";
 
 export default {
     name: "News",
     components: {
         Button
+    },
+    data() {
+        return {
+            store
+        }
+    },
+    methods: {
+        setActiveRow() {
+            if (this.store.active === 0) {
+                this.store.active = 1
+            } else {
+                this.store.active = 0
+            }
+        }
     }
 }
 </script>
@@ -20,7 +35,13 @@ export default {
                     <Button>see all</Button>
                 </div>
             </div>
-            <div class="row row-cols-3">
+            <div class="row row-cols-3 " v-show="store.active === 0">
+                <div class="next" @click.prevent="setActiveRow()">
+                    <font-awesome-icon icon="fa-solid fa-chevron-right" />
+                </div>
+                <div class="prev" @click.prevent="setActiveRow()">
+                    <font-awesome-icon icon="fa-solid fa-chevron-left" />
+                </div>
                 <div class="col">
                     <div class="card increase">
                         <h3>Increasing creativity is possible for everyone</h3>
@@ -34,6 +55,29 @@ export default {
                 <div class="col">
                     <div class="card working">
                         <h3>Working from home is now a trend</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-3 " v-show="store.active === 1">
+                <div class="next" @click.prevent="setActiveRow()">
+                    <font-awesome-icon icon="fa-solid fa-chevron-right" />
+                </div>
+                <div class="prev" @click.prevent="setActiveRow()">
+                    <font-awesome-icon icon="fa-solid fa-chevron-left" />
+                </div>
+                <div class="col">
+                    <div class="card working">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card office">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card laptop">
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
                     </div>
                 </div>
             </div>
@@ -85,6 +129,22 @@ export default {
         }
 
         .row {
+            position: relative;
+
+            .next {
+                position: absolute;
+                left: 69rem;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .prev {
+                position: absolute;
+                left: 5rem;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
             .col {
                 .card {
                     border: none;
@@ -114,6 +174,14 @@ export default {
 
                 .card.working {
                     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/news-3.jpg);
+                }
+
+                .card.office {
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/news-4.jpg);
+                }
+
+                .card.laptop {
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/news-5.jpg);
                 }
             }
         }

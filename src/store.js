@@ -3,6 +3,7 @@ import { reactive } from "vue";
 export const store = reactive({
     dropdown: false,
     currentYear: "",
+    active: 0,
     pages: [
         {
             text: "home",
