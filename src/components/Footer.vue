@@ -11,6 +11,14 @@ export default {
         return {
             store
         }
+    },
+    computed: {
+        getCurrentYear() {
+            return this.store.currentYear = (new Date()).getFullYear();
+        }
+    },
+    mounted() {
+        this.getCurrentYear()
     }
 }
 </script>
@@ -91,7 +99,7 @@ export default {
             <div class="footer_bottom">
                 <div class="box d-flex align-items-center justify-content-between">
                     <div>Enjoy the low price. We are tracking any intention of piracy.</div>
-                    <div>&copy 2020 NEXGEN is Proudly Powered by <span>Mattia</span>. </div>
+                    <div>&copy {{ store.currentYear }} NEXGEN is Proudly Powered by <span>Mattia</span>. </div>
                 </div>
             </div>
         </div>
